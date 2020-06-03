@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 3000 || process.env.PORT;
 // using express to allow us to serve a next.js static site, react app and docusaurus under different routes.
 
 setupSite('map-page/build','map');
